@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MurderBob</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/game.css">
+    </head>
+    <body>
+        <div class="app-container">
+            <div id="app">
+                <div class="enableAudioScreen">
+                    <button class="button" id="enableAudio">Click me to enable audio</button>
+                </div>
+                <div class="HomeScreen">
+                    <div class="container">
+                        <span class="ShadowLabel" id="titleLabel">MurderBob</span>
+                        <button class="button" id="startButton">Start Game</button>
+                        <button class="button" id="leaderboardButton">Leaderboard</button>
+                        <button class="button" id="quitButton">Quit</button>
+                        <span id="footerLabel" style="font-family: Arial; font-style: italic; font-size: 20px; color: white;">This was completely made by the awesome mind of 5quirre1</span>
+                        <span id="footerLabel" style="font-family: Arial; font-style: italic; font-size: 20px; color: white;">Rewritten in JavaScript by mpax235</span>
+                    </div>
+                </div>
+                <div class="Leaderboard">
+                    <div class="container">
+                        <span id="titleLabel">Leaderboard</span>
+                        <ul id="leaderboardEntries">
+                            <li>1. Squirrel - Wave 39</li>
+                            <li>2. Wish - Wave 20</li>
+                            <li>3. Greg - Yes</li>
+                            <li>4. greg - yes</li>
+                            <li>5. Greg - grr</li>
+                        </ul>
+                        <button id="backButton">Back</button>
+                    </div>
+                </div>
+                <div class="Game">
+                    <canvas id="gameCanvas" width="800" height="600"></canvas>
+                </div>
+            </div>
+        </div>
+    </body>
+    <audio id="homemusic" loop>
+        <source src="Assets/Firemusic.wav" type="audio/ogg">
+    </audio>
+    <script src="js/game.js"></script>
+</html>
