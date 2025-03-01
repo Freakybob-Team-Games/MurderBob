@@ -1,3 +1,7 @@
+body {
+    user-select: none;
+}
+
 #app {
     width: 800px;
     height: 600px;
